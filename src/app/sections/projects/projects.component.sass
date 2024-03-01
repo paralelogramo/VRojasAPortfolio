@@ -1,0 +1,371 @@
+@font-face 
+    font-family: 'Bebas Neue'
+    src: url(../../../assets/bebas.ttf)
+
+    
+.projects-base
+    background-color: black
+    position: relative
+    height: 100vh
+    width: 100%
+    display: grid
+    place-items: center
+
+    .content-container
+        $bc: 150
+        position: relative
+        width: 90%
+        height: 90%
+        border: 2px solid rgb($bc, $bc, $bc)
+
+        .project-container
+            width: 100%
+            height: 100%
+            display: grid
+            place-items: center
+
+            .ppss-container 
+                position: relative
+                width: 80%
+                height: 80%
+                border: 2px solid rgb($bc, $bc, $bc)
+                border-radius: 15px
+                background: url('../../../assets/aminoacids_grey.png')
+                background-size: cover
+                background-position: center
+                border-radius: 14px
+                filter: brightness(0.5)
+                transition: background-size 0.3s, transform 0.3s, background-color 1s, filter 0.3s
+                
+
+                .ppss-title-container
+                    
+
+                    .ppss-icon
+                        width: 5rem
+                        height: 5rem
+                        color: white
+
+                    .title-ppss
+                        font-size: 5rem
+                        font-weight: 600
+                        color: white
+                        font-family: 'Bebas Neue'
+                
+                .ppss-description-container
+                    
+                    .description-ppss
+                        font-size: 1.8vw
+                        font-weight: bold
+                        color: white
+                        font-family: 'Bebas Neue'
+
+                    .project-button
+                        border: 2px solid #1a1933
+                        background-color: rgba(255, 255, 255, 0.2)
+                        color: white
+                        font-size: 1rem
+                        font-weight: bold
+                        padding: 0.5rem 1rem
+                        border-radius: 5px
+
+                    .project-button:hover
+                        background-color: rgba(255, 255, 255, 0.5)
+                        color: white
+                        transition: background-color 0.5s, color 0.5s
+
+            .ppss-container:hover 
+                background: url('../../../assets/aminoacids.png')
+                background-size: 110%
+                background-size: cover
+                background-position: center
+                transform: scale(1.05)
+                filter: brightness(1)
+                transition: background-size 0.3s, transform 0.3s, filter 0.3s
+
+
+            .long-description-container
+                position: relative
+                height: 80%
+
+                .ppss-long-description-container-no-filter
+                    $bbc: rgb($bc, $bc, $bc)
+                    position: relative
+                    border-width: 2px
+                    border-color: $bbc $bbc $bbc black
+                    border-style: solid
+                    border-radius: 0px 10px 10px 0px
+                    background: rgb(0,0,0)
+                    background: -moz-linear-gradient(90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    background: linear-gradient(90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    filter: none
+                    transform: scale(1.05)
+                    transition: filter 0.3s, transform 0.3s
+                    display: grid
+                    place-items: center
+                    
+
+                    .ppss-text-long-description
+                        font-size: 1.4vw
+                        font-weight: 400
+                        color: white
+                        font-family: 'Bebas Neue'
+                        padding: 1rem
+                        line-height: auto
+
+                .ppss-long-description-container
+                    $bbc: rgb($bc, $bc, $bc)
+                    position: relative
+                    border-width: 2px
+                    border-color: $bbc $bbc $bbc black
+                    border-style: solid
+                    border-radius: 0px 10px 10px 0px
+                    background: rgb(0,0,0)
+                    background: -moz-linear-gradient(90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    background: linear-gradient(90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    filter: brightness(50%)
+                    transform: scale(1)
+                    transition: filter 0.3s, transform 0.3s
+                    display: grid
+                    place-items: center
+
+                    .ppss-text-long-description
+                        font-size: 1.4vw
+                        font-weight: 400
+                        color: white
+                        font-family: 'Bebas Neue'
+                        padding: 1rem
+                        line-height: auto
+
+                    .no-select-project-text
+                        display: none
+                    
+                .tunegocio-long-description-container-no-filter
+                    $bbc: rgb($bc, $bc, $bc)
+                    position: relative
+                    border-width: 2px
+                    border-color: $bbc black $bbc $bbc
+                    border-style: solid
+                    border-radius: 10px 0px 0px 10px
+                    background: rgb(0,0,0)
+                    background: -moz-linear-gradient(-90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    background: -webkit-linear-gradient(-90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    background: linear-gradient(-90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    filter: none
+                    transform: scale(1.05)
+                    transition: filter 0.3s, transform 0.3s
+                    display: grid
+                    place-items: center
+
+                    .tunegocio-text-long-description
+                        font-size: 1.4vw
+                        font-weight: 400
+                        color: white
+                        font-family: 'Bebas Neue'
+                        padding: 1rem
+                        line-height: auto
+
+                .tunegocio-long-description-container
+                    $bbc: rgb($bc, $bc, $bc)
+                    position: relative
+                    border-width: 2px
+                    border-color: $bbc black $bbc $bbc
+                    border-style: solid
+                    border-radius: 10px 0px 0px 10px
+                    background: rgb(0,0,0)
+                    background: -moz-linear-gradient(-90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    background: -webkit-linear-gradient(-90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    background: linear-gradient(-90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0.1) 100%)
+                    filter: brightness(50%)
+                    transform: scale(1)
+                    transition: filter 0.3s, transform 0.3s
+                    display: grid
+                    place-items: center
+
+                    .tunegocio-text-long-description
+                        font-size: 1.4vw
+                        font-weight: 400
+                        color: white
+                        font-family: 'Bebas Neue'
+                        padding: 1rem
+                        line-height: auto
+
+
+            .tunegocio-container 
+                position: relative
+                width: 80%
+                height: 80%
+                border: 2px solid rgb($bc, $bc, $bc)
+                border-radius: 15px
+                background: url('../../../assets/minimarket_grey.png')
+                background-size: cover
+                background-position: center
+                border-radius: 14px
+                filter: brightness(0.5)
+                transition: background-size 0.3s, transform 0.3s, background-color 1s, filter 0.3s
+                
+
+                .tunegocio-title-container
+
+                    .title-tunegocio
+                        font-size: 5rem
+                        font-weight: 600
+                        color: white
+                        font-family: 'Bebas Neue'
+                
+                .tunegocio-description-container
+                    
+                    .description-tunegocio
+                        font-size: 1.8vw
+                        font-weight: bold
+                        color: white
+                        font-family: 'Bebas Neue'
+
+                    .project-button
+                        border: 2px solid #1a1933
+                        background-color: rgba(255, 255, 255, 0.2)
+                        color: white
+                        font-size: 1rem
+                        font-weight: bold
+                        padding: 0.5rem 1rem
+                        border-radius: 5px
+
+                    .project-button:hover
+                        background-color: rgba(255, 255, 255, 0.5)
+                        color: white
+                        transition: background-color 0.5s, color 0.5s
+                        transition: background-color 0.5s, color 0.5s
+
+            .tunegocio-container:hover 
+                background: url('../../../assets/minimarket.png')
+                background-size: 110%
+                background-size: cover
+                background-position: center
+                transform: scale(1.05)
+                filter: brightness(1)
+                transition: background-size 0.3s, transform 0.3s, filter 0.3s
+                
+$smartphone: 1000px
+
+@media only screen and ( max-width: $smartphone ) and (orientation: portrait)
+    .projects-base
+        .content-container
+            .middle-column
+                display: none
+
+            .project-container
+
+                .ppss-container
+                    gap: 0 !important
+                    width: 90%
+                    height: 90%
+
+                    .ppss-title-container
+                        margin: 0 !important
+                        padding: 0 !important
+
+                        .ppss-icon
+                            display: none
+                        .title-ppss
+                            font-size: 3rem
+
+                    .ppss-description-container
+                        .description-ppss
+                            font-weight: 400
+                            line-height: 1
+                            font-size: 1.3rem
+
+                .tunegocio-container
+                    gap: 0 !important
+                    width: 90%
+                    height: 90%
+
+                    .tunegocio-title-container
+                        .title-tunegocio
+                            font-size: 3rem
+
+                    .tunegocio-description-container
+                        .description-tunegocio
+                            font-weight: 400
+                            line-height: 1
+                            font-size: 1.5rem
+        
+
+@media only screen and ( max-width: $smartphone ) and (orientation: landscape)
+
+    @keyframes fade-in
+        from
+            opacity: 0
+        to
+            opacity: 1
+        
+    @keyframes fade-out
+        from
+            opacity: 1
+        to
+            opacity: 0
+    
+    .projects-base
+        .content-container
+            .left-column
+                width: 50%
+
+                .ppss-container
+                    gap: 0 !important
+                    width: 90%
+                    height: 90%
+
+                    .ppss-title-container
+                        margin: 0 !important
+                        padding: 0 !important
+
+                        .ppss-icon
+                            display: none
+                        .title-ppss
+                            font-size: 2.5rem
+
+                    .ppss-description-container
+                        gap: 0 !important
+
+                        .description-ppss
+                            font-weight: 400
+                            line-height: 1.2 !important
+                            font-size: 1.1rem
+                            margin-top: 0.5rem !important
+
+                        .project-button
+                            font-size: 0.75rem
+                            margin: 0
+
+            .middle-column
+                display: none
+
+            .right-column
+                width: 50%
+                
+                .tunegocio-container
+                    gap: 0 !important
+                    width: 90%
+                    height: 90%
+
+                    .tunegocio-title-container
+                        margin: 0 !important
+                        padding: 0 !important
+
+                        .title-tunegocio
+                            font-size: 2.5rem
+
+                    .tunegocio-description-container
+                        gap: 0 !important
+
+                        .description-tunegocio
+                            font-weight: 400
+                            line-height: 1.2 !important
+                            font-size: 1.1rem
+                            margin-top: 0.5rem !important
+
+                        .project-button
+                            font-size: 0.75rem
+                            margin: 0

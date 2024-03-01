@@ -1,0 +1,238 @@
+@font-face
+    font-family: 'Typodraft'
+    src: url(../../../assets/typodraft.otf)
+
+@font-face 
+    font-family: 'Bebas Neue'
+    src: url(../../../assets/bebas.ttf)
+    
+.skills-base
+    background-color: black
+    position: relative
+    height: 100vh
+    width: 100%
+    display: grid
+    place-items: center
+
+    .content-container
+        $bc: 150
+        position: relative
+        width: 90%
+        height: 90%
+        border: 2px solid rgb($bc, $bc, $bc)
+
+        .w-10
+            width: 10%
+
+        .w-90
+            width: 90%j
+
+        .vertical-text
+            width: 100%
+            height: 100%
+            writing-mode: vertical-rl
+            text-orientation: upright
+            transform: scale(-1, -1), rotate(180deg)
+            display: grid
+            place-items: center
+            font-family: 'Bebas Neue'
+            color: white
+            font-size: 5.5vw
+
+        .skills-container
+            position: relative
+            width: 100%
+            height: 100%
+            display: grid
+            place-items: center
+
+            .skills-list-container
+                position: relative
+                width: 100%
+                height: 90%
+
+                .grayscale
+                    filter: grayscale(1)
+                    transition: filter 0.5s
+
+                .skill-item
+                    position: relative
+                    width: 90%
+                    height: 90%
+                    display: grid
+                    place-items: center
+
+                    .icon
+                        position: relative
+                        width: 30%
+                        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5 ))
+
+                    .background
+                        box-shadow: inset 0 0 10px 20px black
+                        position: absolute
+                        width: 95%
+                        height: 95%
+
+                    .angular-background
+                        background-color: rgba(255, 0, 0, 0.25)
+                        
+                    .vue-background
+                        background-color: rgba(0, 255, 0, 0.25)
+
+                    .react-background
+                        background-color: rgba(0, 0, 255, 0.25)
+
+                    .html-background
+                        background-color: rgba(255, 255, 0, 0.25)
+                    
+                    .css-background
+                        background-color: rgba(0, 255, 255, 0.25)
+
+                    .bootstrap-background
+                        background-color: rgba(255, 0, 255, 0.25)
+
+                    .primeng-background
+                        background-color: rgba(255, 50, 50, 0.25)
+
+                    .sass-background
+                        background-color: rgba(255, 50, 187, 0.25)
+                    
+                    .skill-description
+                        position: absolute
+                        width: 100%
+                        height: 100%
+                        display: grid
+                        place-items: center
+                        color: white
+                        font-family: 'Bebas Neue'
+                        font-size: 1.8vw
+                        line-height: 1em
+                        text-align: center
+
+                .grayscale:hover
+                    filter: none
+                    transition: filter 0.5s
+
+
+$smartphone: 1000px
+
+@media only screen and ( max-width: $smartphone ) and (orientation: portrait)
+    .skills-base
+        .content-container
+            flex-direction: column !important
+
+            .row:nth-child(1)
+                height: 15% !important
+                width: 100%
+                    
+                .vertical-text
+                    writing-mode: horizontal-tb
+                    transform: none
+                    font-size: 3rem
+                    margin-top: 1rem !important
+            
+            .row:nth-child(2)
+                height: 85% !important
+                .skills-container
+                    .skills-list-container
+                        position: relative
+                        height: 100% !important
+
+                        .row::-webkit-scrollbar
+                            display: none !important
+
+                        .row
+                            height: 50% !important
+                            max-height: 50% !important
+                            display: flex !important
+                            flex-direction: row !important
+                            overflow-y: scroll !important
+                            overflow-x: scroll !important
+                            flex-wrap: nowrap !important
+                            -webkit-overflow-scrolling: touch !important
+                            gap: 0rem !important
+
+                            .text-column
+                                position: absolute
+                                height: 50%
+                                bottom: 0
+
+                            .skill-item
+                                border: none !important
+                                background-color: black !important
+                                
+                                .background
+                                    box-shadow: none !important
+                                    background-color: black !important
+
+                                .icon
+                                    width: 80% !important
+                                    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5 )) !important
+
+                                .skill-description
+                                    font-size: 2rem !important
+                                    line-height: 2rem !important    
+
+@media only screen and ( max-width: $smartphone ) and (orientation: landscape)
+
+    .skills-base
+        .content-container
+            flex-direction: column !important
+
+            .row:nth-child(1)
+                height: 25% !important
+                width: 100%
+                display: grid
+                place-items: center
+                    
+                .vertical-text
+                    writing-mode: horizontal-tb
+                    transform: none
+                    font-size: 3rem
+            
+            .row:nth-child(2)
+                height: 85% !important
+
+                .skills-container
+
+                    .skills-list-container
+                        position: relative
+                        height: 100% !important
+
+                        .row::-webkit-scrollbar
+                            display: none !important
+
+                        .row
+                            height: 50% !important
+                            max-height: 50% !important
+                            display: flex !important
+                            flex-direction: row !important
+                            overflow-y: scroll !important
+                            overflow-x: scroll !important
+                            flex-wrap: nowrap !important
+                            -webkit-overflow-scrolling: touch !important
+                            gap: 0rem !important
+
+                            .text-column
+                                position: absolute
+                                height: 50%
+                                width: 100%
+                                bottom: 0
+
+                            .skill-item
+                                border: none !important
+                                background-color: black !important
+                                
+                                .background
+                                    box-shadow: none !important
+                                    background-color: black !important
+
+                                .icon
+                                    width: 55% !important
+                                    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5 )) !important
+
+                                .skill-description
+                                    font-size: 2rem !important
+                                    line-height: 2rem !important
+
+    

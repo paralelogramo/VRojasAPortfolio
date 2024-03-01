@@ -1,0 +1,121 @@
+::ng-deep .tooltip.show
+    opacity: 1
+
+    
+::ng-deep .tooltip .tooltip-inner
+    background-color: rgba(0, 0, 0, 1) !important    
+
+    border-color: white white white transparent !important
+    border-width: 1px !important
+    border-style: solid !important
+    border-radius: 0px 10px 10px 0px !important
+
+    color: #ffffff !important
+    font-size: 1rem !important
+    font-weight: 600 !important
+    opacity: 1 !important
+
+::ng-deep .tooltip .tooltip-arrow::before
+    border-right-color: transparent !important
+    margin-left: 10px !important
+
+@font-face 
+    font-family: 'Bebas Neue'
+    src: url(../assets/bebas.ttf)
+
+.base
+    height: 100vh
+    width: 100vw
+    background-color: black
+
+    .mobile-advice
+        display: grid
+        place-items: center
+
+        .mobile-advice-text
+            font-size: 1.5rem
+            font-family: 'Bebas Neue'
+            font-weight: 400
+            color: white
+            padding: 1rem
+            width: 90%
+            height: 90%
+            text-align: center
+            display: grid
+            place-items: center
+            border: 2px solid white
+            padding: 2rem !important
+            
+
+    .sidebar
+        display: none
+        position: absolute
+        left: 1rem
+        top: 50%
+        transform: translateY(-50%)
+        border: 1px solid white
+        border-radius: 5px
+        z-index: 1000
+
+        .icon
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            color: white
+            font-size: 1.5rem
+
+    .sections-container
+        position: relative
+        width: 95%
+        left: 5%
+
+        .home-container
+            height: 100vh
+            max-width: 100vw
+            max-height: 100vh
+
+        .me-container
+            height: 100vh
+            max-width: 100vw
+            max-height: 100vh
+
+        .projects-container
+            height: 100vh
+            max-width: 100vw
+            max-height: 100vh
+
+        .skills-container
+            height: 100vh
+            max-width: 100vw
+            max-height: 100vh
+
+        .contact-container
+            height: 100vh
+            max-width: 100vw
+            max-height: 100vh
+
+
+$smartphone: 1000px
+$tablet: 1280px
+$desktopHD: 1366px
+$desktopHDplus: 1600px
+$desktopFHD: 1920px
+$desktopQHD: 2560px
+$desktopUHD: 3840px
+
+@media only screen and ( max-width: $smartphone ) 
+    .base
+        height: calc(500vh - env(safe-area-inset-top)) !important
+        
+        .sidebar
+            display: none !important
+
+@media only screen and ( max-width: $tablet )
+    .base
+        .sidebar
+            display: none !important
+
+        .sections-container
+            width: 100%
+            left: 0

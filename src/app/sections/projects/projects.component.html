@@ -1,0 +1,62 @@
+<div class="projects-base">
+    <div class="content-container">
+        <div class="row h-100">
+            <div class="col-md-4 left-column">
+                <div class="project-container">
+                    <div class="ppss-container d-flex flex-column gap-5 justify-content-center align-items-center" (mouseenter)="enterPPSS()" (mouseleave)="leavePPSS()">
+                        <div class="ppss-title-container d-flex flex-row px-3 pt-3 pb-0 gap-4">
+                            <img class="ppss-icon p-0 m-0" src="../../../assets/logo-ppss.svg" alt="logo-ppss">
+                            <h2 class="title-ppss p-0 m-0 d-flex align-items-center">P.P.S.S.</h2>
+                        </div>
+                        
+                        <div class="ppss-description-container d-flex flex-column justify-content-center align-items-center gap-3">
+                            <p class="description-ppss text-center w-75 lh-sm">
+                                a web platform for designing, exploring and analyzing protein-ligand structural patterns using textual notation and
+                                graphs
+                            </p>
+                            <button type="button" class="btn project-button w-50" (click)="redirectToPPSS()">LET'S SEE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 middle-column">
+                <div class="project-container">
+                   <div class="long-description-container d-flex flex-column gap-5 w-100">
+                        <div #ppsslongdescription class="ppss-long-description-container h-50 w-100">
+                            <p class="ppss-text-long-description text-end my-0 me-3 p-0">
+                                PPSS was my undergraduate degree project. It was born as an idea to unify two existing applications, ScanProsite for
+                                text search and GSP4PDB for graph search. PPSS unifies these two search methods into a single platform for exploring and
+                                analyzing protein-ligand structural patterns.
+                            </p>
+                        </div>
+                        <div #tunegociolongdescription class="tunegocio-long-description-container h-50 w-100">
+                            <p class="tunegocio-text-long-description text-start my-0 ms-3 p-0">
+                                TuNegocio is formed from the idea of my father's minimarket. To facilitate the management of your inventory and to have
+                                a control of her sales and purchases for her minimarket.
+                            </p>
+                        </div>
+                        <div class="no-select-container d-none">
+                            <p class="no-project-select d-none">Try to click on a project!</p>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 right-column">
+                <div class="project-container">
+                    <div class="tunegocio-container d-flex flex-column gap-5 justify-content-center align-items-center" (mouseenter)="enterTuNegocio()" (mouseleave)="leaveTuNegocio()">
+                        <div class="tunegocio-title-container d-flex flex-row px-3 pt-3 pb-0 gap-4">
+                            <h2 class="title-tunegocio p-0 m-0 d-flex align-items-center">TUNEGOCIO</h2>
+                        </div>
+                
+                        <div class="tunegocio-description-container d-flex flex-column justify-content-center align-items-center gap-3">
+                            <p class="description-tunegocio text-center w-75 lh-sm">
+                                A multiplatform system for local minimarkets to manage their inventory, purchases and sales.
+                            </p>
+                            <button disabled type="button" class="btn project-button w-50"><em>Developing</em></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

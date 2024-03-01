@@ -1,0 +1,72 @@
+<div class="skills-base">
+    <div class="content-container d-flex flex-row gap-2">
+        <div class="row h-100 w-10 p-0 m-0">
+            <h3 class="vertical-text m-0 p-0">SKILLS</h3>
+        </div>
+        <div class="row h-100 w-100 p-0 m-0">
+            <div class="skills-container">
+                <div class="skills-list-container">
+                    <div id="skillList" class="row h-100 w-100 p-0 m-0 ">
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="skill-item grayscale m-0 p-0"  (mouseleave)='exitSkill()' (mouseenter)="enterSkill('Angular')">
+                                <div class="angular-background background"></div>
+                                <img class="icon p-0 m-0" src="../../../assets/svg-skills/fe_angular.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="skill-item grayscale m-0 p-0" (mouseleave)='exitSkill()' (mouseenter)="enterSkill('Vue')">
+                                <div class="vue-background background"></div>
+                                <img class="icon p-0 m-0" src="../../../assets/svg-skills/fe_vue.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="skill-item grayscale m-0 p-0" (mouseleave)='exitSkill()' (mouseenter)="enterSkill('React')">
+                                <div class="react-background background"></div>
+                                <img class="icon p-0 m-0" src="../../../assets/svg-skills/fe_reactjs.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <div class="skill-item grayscale m-0 p-0" (mouseleave)='exitSkill()' (mouseenter)="enterSkill('HTML')">
+                                <div class="html-background background"></div>
+                                <img class="icon p-0 m-0" src="../../../assets/svg-skills/fe_html.svg" alt="">
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-4 d-flex align-items-center justify-content-center text-column">
+                            <div class="skill-item">
+                                <p class="skill-description p-0 m-0">{{skillText}}</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4  d-flex align-items-center justify-content-center">
+                            <div class="skill-item grayscale m-0 p-0" (mouseleave)='exitSkill()' (mouseenter)="enterSkill('CSS')">
+                                <div class="css-background background"></div>
+                                <img class="icon p-0 m-0" src="../../../assets/svg-skills/fe_css.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4  d-flex align-items-center justify-content-center">
+                            <div class="skill-item grayscale m-0 p-0" (mouseleave)='exitSkill()' (mouseenter)="enterSkill('Bootstrap')">
+                                <div class="bootstrap-background background"></div>
+                                <img class="icon p-0 m-0" src="../../../assets/svg-skills/fe_bootstrap.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4  d-flex align-items-center justify-content-center">
+                            <div class="skill-item grayscale m-0 p-0" (mouseleave)='exitSkill()' (mouseenter)="enterSkill('PrimeNG')">
+                                <div class="primeng-background background"></div>
+                                <img class="icon p-0 m-0" src="../../../assets/svg-skills/fe_primeng.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4  d-flex align-items-center justify-content-center">
+                            <div class="skill-item grayscale m-0 p-0" (mouseleave)='exitSkill()' (mouseenter)="enterSkill('Sass')">
+                                <div class="sass-background background"></div>
+                                <img class="icon p-0 m-0" src="../../../assets/svg-skills/fe_sass.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

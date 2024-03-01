@@ -1,0 +1,241 @@
+@keyframes rotate
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
+@keyframes rotate-inverse
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(-360deg)
+    
+@font-face
+    font-family: 'Adelia'
+    src: url(../../../assets/adelia.ttf)
+
+@font-face
+    font-family: 'Typodraft'
+    src: url(../../../assets/typodraft.otf)
+
+.me-base
+    background-color: black
+    height: 100vh
+    width: 100%
+    display: grid
+    place-items: center
+
+    .content-container
+        $bc: 150
+        width: 90%
+        height: 90%
+        border: 2px solid rgb($bc, $bc, $bc)
+
+        .info-container-1
+            width: 100%
+            height: 100%
+            display: grid
+            place-items: center
+
+            .left-info-container
+                width: 95%
+                height: 95%
+                display: flex
+                flex-direction: column
+                justify-content: end
+
+                .left-title
+                    font-family: 'Adelia'
+                    font-size: 3vw
+                    color: white
+
+                .left-text
+                    justify-content: space-between
+                    font-family: Georgia, 'Times New Roman', Times, serif
+                    font-size: 1.3rem
+                    color: white
+
+        .info-container-2
+            position: relative
+            width: 100%
+            height: 100%
+            display: grid
+            place-items: center
+
+            .image-container
+                position: relative
+                width: 85%
+                height: 90%
+                display: grid
+                place-items: center
+
+                .blob-1
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    scale: 1.1
+                
+                .blob-2
+                    position: absolute
+                    width: 100%
+                    height: 100%
+
+                .avatar
+                    position: absolute
+                    width: 50%
+                    height: 50%
+
+        .info-container-3
+            position: relative
+            width: 100%
+            height: 100%
+            display: grid
+            place-items: center
+
+            .right-info-container
+                position: relative
+                width: 95%
+                height: 95%
+                display: flex
+                flex-direction: column
+                justify-content: start
+
+                .right-title
+                    position: relative
+                    font-family: 'Adelia'
+                    font-size: 3rem
+                    color: white
+
+                .right-text
+                    position: relative
+                    justify-content: space-between
+                    font-family: Georgia, 'Times New Roman', Times, serif
+                    font-size: 1.3rem
+                    color: white
+
+
+$smartphone: 1000px
+
+@media only screen and ( max-width: $smartphone ) and (orientation: portrait)
+    .me-base
+        .content-container
+            position: relative
+            z-index: 4
+
+            .info-container-1
+                .left-info-container
+                    .left-title
+                        font-size: 2rem
+                        margin-top: 5vh !important
+                        margin-bottom: 1.75vh !important
+                    .left-text
+                        font-size: 1rem
+
+            .info-container-2
+                display: none !important
+
+            .info-container-3
+                .right-info-container
+                    .right-title
+                        font-size: 2rem
+                        margin-top: 5vh !important
+                        margin-bottom: 1.75vh !important
+                    .right-text
+                        font-size: 1rem
+
+        .content-container::after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            z-index: -2
+            background-image: url(../../../assets/blob-1.svg)
+            background-size: auto
+            background-repeat: no-repeat
+            background-position: center
+            opacity: 0.2
+            animation: rotate 20s linear infinite
+            
+        .content-container::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            z-index: -1
+            background-image: url(../../../assets/blob-2.svg)
+            background-size: auto
+            background-repeat: no-repeat
+            background-position: center
+            opacity: 0.2
+            animation: rotate-inverse 20s linear infinite
+
+@media only screen and (max-width: $smartphone ) and (orientation: landscape)
+    .me-base
+        position: relative
+
+        .content-container
+            z-index: 4
+
+            .left-column
+                width: 40% !important
+
+                .info-container-1
+                    .left-info-container
+                        justify-content: center
+                        .left-title
+                            margin: 0px 0px 1rem 0.6rem !important
+                            font-size: 4vw
+                        .left-text
+                            margin: 1rem 0px 0px 0.6rem !important
+                            font-size: 0.95rem
+            .middle-column
+                width: 20% !important
+                .info-container-2
+                    display: none !important
+
+            .right-column
+                width: 40% !important
+            
+                .info-container-3
+                    .right-info-container
+                        justify-content: center
+                        .right-title
+                            margin: 0px 0.6rem 1rem 0px !important
+                            font-size: 2rem
+                        .right-text
+                            margin: 1rem 0.6rem 0px 0px !important
+                            font-size: 0.95rem
+
+        .content-container::after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            z-index: -2
+            background-image: url(../../../assets/blob-1.svg)
+            background-size: auto
+            background-repeat: no-repeat
+            background-position: center
+            opacity: 0.2
+            animation: rotate 20s linear infinite
+            
+        .content-container::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            z-index: -1
+            background-image: url(../../../assets/blob-2.svg)
+            background-size: auto
+            background-repeat: no-repeat
+            background-position: center
+            opacity: 0.2
+            animation: rotate-inverse 20s linear infinite
